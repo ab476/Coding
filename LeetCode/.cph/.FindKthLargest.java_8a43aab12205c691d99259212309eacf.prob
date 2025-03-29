@@ -1,0 +1,1 @@
+{"name":"Local: FindKthLargest","url":"d:\\Coding\\LeetCode\\FindKthLargest.java","tests":[{"id":1742748468640,"input":"3,2,1,5,6,4\n2","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\LeetCode\\FindKthLargest.java","group":"local","local":true}
