@@ -34,5 +34,6 @@ public class SetMatrixZero {
                 .toArray(int[][]::new);
 
                 new SetMatrixZero().setZeroes(matrix);
+        sc.close();
     }
 }
