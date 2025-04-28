@@ -114,10 +114,46 @@ public class RecursionBasics {
             arr[start + i] = copy[i];
         }
     }
-
+    public static void printArr(int[] arr) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+    public static void quickSort(int[] arr){
+        quickSort(arr, 0, arr.length - 1);
+    }
+    public static void quickSort(int[] arr, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+        int pivot = quickSortPartition(arr, start, end);
+        quickSort(arr, start, pivot - 1);
+        quickSort(arr, pivot + 1, end);
+    }
+    public static int quickSortPartition(int[] arr, int start, int end) {
+        int pivot = arr[end];
+        int i = start - 1;
+        for (int j = start; j < end; j++) {
+            if (arr[j] <= pivot) {
+                i++;
+                swap(arr, i, j);
+            }
+        }
+        swap(arr, i + 1, end);
+        return i + 1;
+    }
+    private static void swap(int[] arr, int i, int j) {
+        if (i == j) {
+            return;
+        }
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
     public static void main(String[] args) {
         var list = new int[] { 5, 2, 9, 1, 5, 6 };
-        mergeSort(list);
+        quickSort(list);
         for (int i : list) {
             System.out.print(i + " ");
         }
