@@ -39,6 +39,7 @@ public class SearchInRotatedSortedArray {
     }
     public static void main(String[] args) {
         var list = new int[] { 4,5,6,7,0,1,2 };
+        printArr(list);
         int target = search(list, 0);
         System.out.println("Target found at index: " + target);
     }
