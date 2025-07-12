@@ -1,3 +1,5 @@
+package LeetCode;
+
 public class MaxSubArray {
     public int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE, currSum = 0;
