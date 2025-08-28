@@ -13,5 +13,6 @@ public class TimeRequiredToBuy {
             }
         }
         return time;
+        
     }
 }
