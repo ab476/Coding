@@ -1,4 +1,4 @@
-package GeeksforGeeks.GFG160.Arrays;
+
 
 public class RotateArr {
     // Function to rotate an array by d elements in counter-clockwise direction.

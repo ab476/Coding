@@ -1,4 +1,4 @@
-package GeeksforGeeks.GFG160.Arrays;
+
 
 public class ReverseArray {
     public void reverseArray(int arr[]) {

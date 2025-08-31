@@ -1,4 +1,4 @@
-package GeeksforGeeks.GFG160.Arrays;
+
 
 public class SecondLargest {
     public int getSecondLargest(int[] arr) {
